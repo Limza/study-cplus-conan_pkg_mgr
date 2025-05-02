@@ -1,0 +1,18 @@
+[settings]
+os = Windows
+arch = x86_64
+compiler = msvc
+
+# Visual Studio 2022는 193, 2019는 192
+compiler.version = 193
+
+# Release -> MD
+compiler.runtime_type = Release
+
+compiler.runtime = dynamic
+compiler.cppstd = 17
+build_type = Release
+
+[options]
+# Conan 패키지를 정적 라이브러리(.lib) 로만 빌드
+*:shared=False
